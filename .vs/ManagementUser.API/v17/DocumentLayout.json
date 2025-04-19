@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pinthu\\Desktop\\Courses\\ManagementUser\\API\\ManagementUser.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39318865-C290-4AA9-BBA1-29B1C75DF230}|ManagementUser.API\\ManagementUser.API.csproj|c:\\users\\pinthu\\desktop\\courses\\managementuser\\api\\managementuser.api\\managementuser.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39318865-C290-4AA9-BBA1-29B1C75DF230}|ManagementUser.API\\ManagementUser.API.csproj|solutionrelative:managementuser.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39318865-C290-4AA9-BBA1-29B1C75DF230}|ManagementUser.API\\ManagementUser.API.csproj|c:\\users\\pinthu\\desktop\\courses\\managementuser\\api\\managementuser.api\\managementuser.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39318865-C290-4AA9-BBA1-29B1C75DF230}|ManagementUser.API\\ManagementUser.API.csproj|solutionrelative:managementuser.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39318865-C290-4AA9-BBA1-29B1C75DF230}|ManagementUser.API\\ManagementUser.API.csproj|c:\\users\\pinthu\\desktop\\courses\\managementuser\\api\\managementuser.api\\managementuser.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39318865-C290-4AA9-BBA1-29B1C75DF230}|ManagementUser.API\\ManagementUser.API.csproj|solutionrelative:managementuser.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pinthu\\Desktop\\Courses\\ManagementUser\\API\\ManagementUser.API\\ManagementUser.API\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ManagementUser.API\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Pinthu\\Desktop\\Courses\\ManagementUser\\API\\ManagementUser.API\\ManagementUser.API\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ManagementUser.API\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowDQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T07:28:30.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Pinthu\\Desktop\\Courses\\ManagementUser\\API\\ManagementUser.API\\ManagementUser.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ManagementUser.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Pinthu\\Desktop\\Courses\\ManagementUser\\API\\ManagementUser.API\\ManagementUser.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ManagementUser.API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T04:21:08.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Pinthu\\Desktop\\Courses\\ManagementUser\\API\\ManagementUser.API\\ManagementUser.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "ManagementUser.API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Pinthu\\Desktop\\Courses\\ManagementUser\\API\\ManagementUser.API\\ManagementUser.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "ManagementUser.API\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T03:54:40.318Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
