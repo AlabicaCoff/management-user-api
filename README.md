@@ -17,7 +17,8 @@ Management User Web API is a web-based application API designed to enable system
   
 ### Usage
 * Run ```dotnet run``` to start the application
-* Connect to the API using Postman or Swagger on port 7263.
+* Connect to the API using Postman or Swagger on port 7263
+* Use the email ``SuperAdmin@ManagementUser.com`` and the password ``SuperAdmin@123`` to log in as the default super administrator of the system.
 
 ### API Endpoints
 | HTTP Verbs | Endpoints | Action |
