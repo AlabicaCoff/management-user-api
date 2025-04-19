@@ -10,10 +10,10 @@ Management User Web API is a web-based application API designed to enable system
 * For example, administrators can create, update, and delete user details, roles, and permissions
 
 ### Prerequisites
-*[.NET 8.0](https://dotnet.microsoft.com/en-us/download)
-*[Visual Studio](https://visualstudio.microsoft.com/downloads/)
-*[SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-*[SQL Server Management Studio](https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms)
+* [.NET 8.0](https://dotnet.microsoft.com/en-us/download)
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+* [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+* [SQL Server Management Studio](https://learn.microsoft.com/en-us/ssms/download-sql-server-management-studio-ssms)
 
   
 ### Installation Guide
