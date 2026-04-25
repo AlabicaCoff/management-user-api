@@ -1,4 +1,5 @@
 using ManagementUser.API.Data;
+using ManagementUser.API.Hubs;
 using ManagementUser.API.Models.Domain;
 using ManagementUser.API.Repositories.Implementation;
 using ManagementUser.API.Repositories.Interface;
@@ -13,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddSignalR();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -75,14 +77,17 @@ app.UseHttpsRedirection();
 // Enable CORS
 app.UseCors(options =>
 {
+    options.WithOrigins("http://localhost:4200");
     options.AllowAnyHeader();
-    options.AllowAnyOrigin();
     options.AllowAnyMethod();
+    options.AllowCredentials();
 });
 
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<ChatHub>("/chathub");
 
 app.Run();
