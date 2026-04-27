@@ -38,7 +38,13 @@ namespace ManagementUser.API.Controllers
                     // Get the User from Database
                     var userData = await userManager.Users.Include(x => x.ApplicationUserPermissions).ThenInclude(x => x.Permission).FirstOrDefaultAsync(x => x.Id == identityUser.Id);
 
-                    var permission = userData.ApplicationUserPermissions.FirstOrDefault().Permission;
+                    if (userData is null)
+                    {
+                        ModelState.AddModelError("", "Email or Password Incorrect");
+                        return ValidationProblem(ModelState);
+                    }
+
+                    var permission = userData.ApplicationUserPermissions?.FirstOrDefault()?.Permission;
 
                     var roles = await userManager.GetRolesAsync(identityUser);
 
@@ -50,7 +56,7 @@ namespace ManagementUser.API.Controllers
                         Email = request.Email,
                         Firstname = identityUser.FirstName,
                         Lastname = identityUser.LastName,
-                        permissionName = permission.Name,
+                        permissionName = permission?.Name ?? string.Empty,
                         Roles = roles.ToList(),
                         Token = jwtToken
                     };

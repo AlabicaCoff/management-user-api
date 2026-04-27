@@ -112,14 +112,14 @@ namespace ManagementUser.API.Controllers
                     UserId = user.Id,
                     FirstName = user.FirstName,
                     LastName = user.LastName,
-                    Email = user.Email,
+                    Email = user.Email ?? "-",
                     Phone = user.PhoneNumber,
                     Role = new UserTitleDto
                     {
                         RoleId = user.UserTitle.Id,
                         RoleName = user.UserTitle.Name
                     },
-                    UserName = user.UserName,
+                    UserName = user.UserName ?? "-",
                     Permissions = user.ApplicationUserPermissions.Select(x => new ApplicationUserPermissionDto
                     {
                         PermissionId = x.PermissionId,
@@ -129,7 +129,7 @@ namespace ManagementUser.API.Controllers
                 });
             }
 
-            var apiResponse = new
+            var apiResponse = new ApiResponsePagination<List<UserDto>>
             {
                 dataSource = response,
                 page = pageNumber,
@@ -176,14 +176,14 @@ namespace ManagementUser.API.Controllers
                 CreatedDate = user.CreatedDate
             };
             
-            var apiResponse = new
+            var apiResponse = new ApiResponse<UserDto>
             {
-                status = new
+                Status = new ApiStatus
                 {
-                    code = "Success",
-                    description = "User retrieved successfully"
+                    Code = "Success",
+                    Description = "User retrieved successfully"
                 },
-                data = response
+                Data = response
             };
 
             return Ok(apiResponse);
@@ -277,14 +277,14 @@ namespace ManagementUser.API.Controllers
                         }).ToList(),
                     };
 
-                    var apiResponse = new
+                    var apiResponse = new ApiResponse<CreateUserResponseDto>
                     {
-                        status = new
+                        Status = new ApiStatus
                         {
-                            code = "Success",
-                            description = "User created successfully"
+                            Code = "Success",
+                            Description = "User created successfully"
                         },
-                        data = new[] { response }
+                        Data = response
                     };
 
                     return Ok(apiResponse);
@@ -442,14 +442,14 @@ namespace ManagementUser.API.Controllers
                             }).ToList(),
                         };
 
-                        var apiResponse = new
+                        var apiResponse = new ApiResponse<UpdateUserResponseDto>
                         {
-                            status = new
+                            Status = new ApiStatus
                             {
-                                code = "Success",
-                                description = "User updated successfully"
+                                Code = "Success",
+                                Description = "User updated successfully"
                             },
-                            data = response
+                            Data = response
                         };
 
                         return Ok(apiResponse);
@@ -540,17 +540,17 @@ namespace ManagementUser.API.Controllers
 
                 if (identityResult.Succeeded)
                 {
-                    var apiResponse = new
+                    var apiResponse = new ApiResponse<DeleteUserResponseDto>
                     {
-                        status = new
+                        Status = new ApiStatus
                         {
-                            code = "Success",
-                            description = "User deleted successfully"
+                            Code = "Success",
+                            Description = "User deleted successfully"
                         },
-                        data = new 
+                        Data = new DeleteUserResponseDto
                         { 
-                            result = true,
-                            message = "User ID: " + id + " deleted successfully"
+                            Result = true,
+                            Message = "User ID: " + id + " deleted successfully"
                         }
                     };
 
@@ -590,9 +590,9 @@ namespace ManagementUser.API.Controllers
         {
             var newUserId = Guid.NewGuid().ToString();
 
-            var apiResponse = new
+            var apiResponse = new NewUserIdResponse
             {
-                newUserId = newUserId,
+                NewUserId = newUserId,
             };
 
             return Ok(apiResponse);

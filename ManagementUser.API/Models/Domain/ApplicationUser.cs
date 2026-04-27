@@ -21,8 +21,8 @@ namespace ManagementUser.API.Models.Domain
         public Guid UserTitleId { get; set; }
 
         [ForeignKey("UserTitleId")]
-        public UserTitle UserTitle { get; set; }
+        public UserTitle? UserTitle { get; set; }
 
-        public ICollection<ApplicationUserPermission> ApplicationUserPermissions { get; set; }
+        public ICollection<ApplicationUserPermission>? ApplicationUserPermissions { get; set; }
     }
 }

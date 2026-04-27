@@ -38,14 +38,14 @@ namespace ManagementUser.API.Controllers
                 });
             }
 
-            var apiResponse = new
+            var apiResponse = new ApiResponse<List<UserTitleDto>>
             {
-                status = new
+                Status = new ApiStatus
                 {
-                    code = "Success",
-                    description = "Roles retrieved successfully"
+                    Code = "Success",
+                    Description = "Roles retrieved successfully"
                 },
-                data = response
+                Data = response
             };
 
             return Ok(apiResponse);

@@ -22,7 +22,7 @@ namespace ManagementUser.API.Controllers
         // GET: {apiBaseUrl}/api/permissions?sort=true
         [HttpGet]
         [Authorize(Roles = "isWritable")]
-        public async Task<IActionResult> GetAllPermissions([FromQuery] bool sort)
+        public async Task<IActionResult> GetAllPermissions([FromQuery] bool sort = false)
         {
             // Get All UserTitles from the DB
             var permissions = await permissionRepository.GetAllAsync(sort);
@@ -42,14 +42,14 @@ namespace ManagementUser.API.Controllers
                 });
             }
 
-            var apiResponse = new
+            var apiResponse = new ApiResponse<List<PermissionDto>>
             {
-                status = new
+                Status = new ApiStatus
                 {
-                    code = "Success",
-                    description = "Permissions retrieved successfully"
+                    Code = "Success",
+                    Description = "Permissions retrieved successfully"
                 },
-                data = response 
+                Data = response
             };
 
             return Ok(apiResponse);
