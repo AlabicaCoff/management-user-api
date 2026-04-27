@@ -40,10 +40,14 @@ Management User Web API is a web-based application API designed to enable system
 | GET | /api/roles | To retrieve all roles that administrators can assign to any user later |
 | GET | /api/permissions | To retrieve all permissions same as roles |
 
+### Testing
+* Run ```dotnet test``` to run all unit tests of project
+
 ### Technologies Used
 * [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
 * [ASP.NET WEB API](https://dotnet.microsoft.com/en-us/apps/aspnet/apis)
 * [SQL Server](https://www.microsoft.com/en-us/sql-server/)
+* [xUnit](https://xunit.net/)
 
 ### Authors
 * [AlabicaCoff](https://github.com/AlabicaCoff)
